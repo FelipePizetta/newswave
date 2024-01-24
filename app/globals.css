@@ -13,5 +13,10 @@
 }
 
 body {
+  font-family: var(--font-openSans);
   background-color: var(--background-hex);
+}
+
+p {
+  font-family: var(--font-poppins);
 }

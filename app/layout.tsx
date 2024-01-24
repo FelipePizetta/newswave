@@ -1,8 +1,18 @@
 import type { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
+import { Open_Sans, Poppins } from "next/font/google";
 import "./globals.css";
 
-const openSans = Open_Sans({ subsets: ["latin"] });
+const open_sans = Open_Sans({ 
+  subsets: ["latin"],
+  variable: '--font-openSans',
+  display: "swap"
+});
+const poppins = Poppins({ 
+  subsets: ["latin"], 
+  weight: "400",
+  variable: '--font-poppins',
+  display: "swap"
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={openSans.className}>{children}</body>
+      <body className={`${open_sans.variable} ${poppins.variable}`}>{children}</body>
     </html>
   );
 }
