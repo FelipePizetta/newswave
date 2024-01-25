@@ -12,8 +12,7 @@ const config: Config = {
         "sapphireBlue": "#0019FF"
       },
       backgroundImage: {
-        "backgroundMobile": "url('/img/backgroundMobile.png')",
-        "backgroundDesktop": "url('/img/backgroundDesktop.png')",
+        "backgroundDefault": "url('/img/backgroundDefault.png')",
       },
       borderColor: {
         "grayishLavender": "#A3A2AA",
