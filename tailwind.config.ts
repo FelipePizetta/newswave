@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       backgroundColor: {
-        "sapphireBlue": "#0019FF"
+        "sapphireBlue": "#0019FF",
+        "vibeGreen": "#44DA10",
       },
       backgroundImage: {
         "backgroundDefault": "url('/img/backgroundDefault.png')",
