@@ -23,7 +23,8 @@ const Sucess: React.FC<NotificationProps> = ({ showNotification }) => {
   };
 
   return (
-    <motion.div 
+    <motion.div
+      initial='hidden'
       className="top-0 absolute bg-vibeGreen flex flex-row justify-center items-center text-white px-4 py-2 rounded-lg mt-4 gap-3 antialiased select-none"
       animate={showNotification ? 'visible' : 'hidden'}
       variants={SucessVariants}>
